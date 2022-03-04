@@ -8,11 +8,6 @@ printf "
 #                                                   #
 #####################################################
 
-Please install it first using:
-sudo apt install stress-ng
-or
-sudo apt install dnf stress-ng
-
 "
 
 sudo echo -n "How many MINUTES test should be perform: "
