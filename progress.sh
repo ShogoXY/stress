@@ -13,6 +13,7 @@ printf "
 sudo echo -n "How many MINUTES test should be perform: "
 
 read mins
+echo ""
 
 a=$((mins))
 b=$((a*60))
@@ -63,7 +64,7 @@ done
 
 
 stress () {
-	sudo stress-ng --cpu 0 --cpu-method all --vm 3 --vm-bytes 90% -t "$mins""m"
+	sudo stress-ng --cpu 0 --cpu-method all --vm 3 --vm-bytes 90% -t "$mins""m" > /dev/null 2>&1
 
 }
 
